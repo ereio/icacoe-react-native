@@ -27,16 +27,16 @@ Because it's my first time, I may have accidentally used some bad practices or u
 
 With additional time, I would have liked to add the following:
 
-- have an examples of internal component state (useState)
+- Have an examples of internal component state (useState)
   - convert the "board" store to local state
   - it's not really necessary to have the board in a global redux store, though it's here as an example
-- eslintrc.js with rules formatted to desired code styling (editor agnostic code styleguide)
+- Eslintrc.js with rules formatted to desired code styling (editor agnostic code styleguide)
   - airbnb's probably
 - Pick which user goes first on home screen
 - See how many times each player type has won (or tied) on score board
 - Clean up some rough domain logic 
 - Testing domain logic (within the redux store and actions)
-- extract react-navigation out to an isolated component alongside the view as index.js (similar to the store index.js)
-- setup dotenv for development or staging environment config (if remote apis or demo data was available)
-- add a nice icon
-- actual UI/UX stuff
+- Extract react-navigation out to an isolated component alongside the view as index.js (similar to the store index.js)
+- Setup dotenv for development or staging environment config (if remote apis or demo data was available)
+- Add a nice icon
+- Actual UI/UX stuff
