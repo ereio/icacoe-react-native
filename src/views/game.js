@@ -17,8 +17,9 @@ import {addPlayerMove} from '../store/board/actions';
 const Game = (props) => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
-  const positions = useSelector((state) => state.board.positions, deepEqual);
+  const full = useSelector((state) => state.board.full, deepEqual);
   const winner = useSelector((state) => state.game.winner, deepEqual);
+  const positions = useSelector((state) => state.board.positions, deepEqual);
 
   const onSetPlayerMove = useCallback((spot) => dispatch(addPlayerMove(spot)), [
     dispatch,
@@ -39,9 +40,26 @@ const Game = (props) => {
           <Board onPressSpot={onSetPlayerMove} positions={positions} />
         </View>
         {!winner || (
+          <View style={[t.flex, t.justifyCenter, t.itemsCenter]}>
+            <Text
+              style={[
+                t.textGreen800,
+                t.textXl,
+                t.p6,
+              ]}>{`${winner} won the round!`}</Text>
+          </View>
+        )}
+        {!full || (
+          <View style={[t.flex, t.justifyCenter, t.itemsCenter]}>
+            <Text style={[t.textGreen800, t.textXl, t.p6]}>
+              {'This round was a tie'}
+            </Text>
+          </View>
+        )}
+        {(!winner && !full) || (
           <Button
             onPress={() => navigation.replace(Routes.Score)}
-            disabled={!winner}>
+            disabled={!winner && !full}>
             <Text style={[t.textWhite]}>{'View Score'}</Text>
           </Button>
         )}

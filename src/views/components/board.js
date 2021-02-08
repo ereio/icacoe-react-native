@@ -23,7 +23,7 @@ const Board = ({onPressSpot, positions}, ...props) => {
           <TouchableOpacity
             {...props}
             key={position}
-            onPress={() => onPressSpot(position)}
+            onPress={() => (char.length ? null : onPressSpot(position))}
             style={[
               t.flex,
               t.textCenter,

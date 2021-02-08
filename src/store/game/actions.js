@@ -1,8 +1,14 @@
+import {RESET_BOARD} from '../board/actions';
+
 export const SET_CURRENT_PLAYER = 'SET_CURRENT_PLAYER';
 export const TOGGLE_CURRENT_PLAYER = 'TOGGLE_CURRENT_PLAYER';
 export const SET_WINNER = 'SET_WINNER';
 export const RESET_GAME = 'RESET_GAME';
 
+export const resetGame = () => (dispatch, getState) => {
+  dispatch({type: RESET_GAME});
+  dispatch({type: RESET_BOARD});
+};
 export const togglePlayerTurn = () => (dispatch, getState) => {
   dispatch({type: TOGGLE_CURRENT_PLAYER});
 };
