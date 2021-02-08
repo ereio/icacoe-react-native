@@ -1,4 +1,9 @@
-import {SET_CURRENT_PLAYER, TOGGLE_CURRENT_PLAYER} from './actions';
+import {
+  RESET_GAME,
+  SET_CURRENT_PLAYER,
+  SET_WINNER,
+  TOGGLE_CURRENT_PLAYER,
+} from './actions';
 import initialState from './state';
 
 export default function gameReducer(state = initialState(), action) {
@@ -12,9 +17,16 @@ export default function gameReducer(state = initialState(), action) {
     case TOGGLE_CURRENT_PLAYER: {
       return {
         ...state,
-        currentPlayer: state.curentPlayer === 'X' ? 'O' : 'X',
+        currentPlayer: state.currentPlayer === 'X' ? 'O' : 'X',
       };
     }
+    case SET_WINNER:
+      return {
+        ...state,
+        winner: state.currentPlayer,
+      };
+    case RESET_GAME:
+      return initialState();
     default:
       return state;
   }

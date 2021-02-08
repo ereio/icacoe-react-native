@@ -12,7 +12,6 @@ import {colors, t} from 'react-native-tailwindcss';
  */
 const Home = (props) => {
   const navigation = useNavigation();
-
   return (
     <SafeAreaView
       style={[

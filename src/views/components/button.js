@@ -17,7 +17,7 @@ const ButtonDefault = (props) => {
       style={[
         t.flex,
         t.textCenter,
-        t.bgBlue700,
+        props.disabled ? t.bgBlue400 : t.bgBlue700,
         t.alignCenter,
         t.justifyCenter,
         t.itemsCenter,
