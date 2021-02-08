@@ -16,6 +16,7 @@ With additional time, I would have added the following:
 - add a nice icon
 
 ## Steps
+
 0. create stubbed views based on estimated screens needed
 0. added navigation library to navigate between screens
 0. added style library to style navigation buttons and future components
@@ -24,4 +25,15 @@ With additional time, I would have added the following:
 0. added state management library (redux) for immutable state pattern (well known / documented pattern)
 0. flipper install in podfile causes issues in react native v0.63, macos only? commented out flipper in podfile
   - https://github.com/facebook/react-native/issues/30836
-0. 
+0. create redux stores for a game and a board
+0. create the board component and the nested components to create the rows and columns to tic-tac-toe
+0. hook up the board to the redux store
+0. create actions to handle in the incoming player moves (swapping users as we go)
+0. edge case testing
+
+## Improvements (with more time)
+
+- Pick which user goes first on home screen
+- See how many times each player type has won (or tied) on score board
+- Clean up some rough code
+- Testing domain logic (within the redux store and actions)
