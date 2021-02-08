@@ -1,10 +1,11 @@
 import React from 'react';
-import {StyleSheet, ScrollView, View, Text} from 'react-native';
+import {StyleSheet, SafeAreaView, View, Text} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
 
-import {Button} from './components';
+import {Button, Board} from './components';
 import {Routes} from '../global/values';
+import {t} from 'react-native-tailwindcss';
 
 /**
  * Home Screen
@@ -13,17 +14,24 @@ const Game = (props) => {
   const navigation = useNavigation();
 
   return (
-    <>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
-        <View style={styles.body}>
-          <Button onPress={() => navigation.navigate(Routes.Score)}>
-            <Text>{'View Score'}</Text>
-          </Button>
+    <SafeAreaView
+      style={[
+        t.flex,
+        t.flexCol,
+        t.flexGrow,
+        t.itemsCenter,
+        t.justifyAround,
+        t.m4,
+      ]}>
+      <View style={styles.body}>
+        <View style={[t.flexCol, t.minH100, t.minW100, t.p12]}>
+          <Board onPressSpot={(spot) => console.log(spot)} />
         </View>
-      </ScrollView>
-    </>
+        <Button onPress={() => navigation.replace(Routes.Score)}>
+          <Text style={[t.textWhite]}>{'View Score'}</Text>
+        </Button>
+      </View>
+    </SafeAreaView>
   );
 };
 

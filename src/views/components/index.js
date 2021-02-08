@@ -1,3 +1,4 @@
-import Button from './button';
+import ButtonDefault from './button';
+import Board from './board';
 
-export {Button};
+export {ButtonDefault as Button, Board};

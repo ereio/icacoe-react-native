@@ -7,20 +7,33 @@
  */
 
 import React from 'react';
-import {View} from 'react-native';
-import {tw} from 'react-native-tailwindcss';
+import {Button, TouchableOpacity, StyleSheet, View} from 'react-native';
+import {t} from 'react-native-tailwindcss';
 
-const Game: () => React$Node = (props) => {
+const ButtonDefault = (props) => {
   return (
-    <>
-      <View
-        style={[tw.bgBlue100, tw.alignCenter, tw.itemsCenter, tw.roundedFull]}>
-        {props.children}
-      </View>
-    </>
+    <TouchableOpacity
+      {...props}
+      style={[
+        t.flex,
+        t.textCenter,
+        t.bgBlue700,
+        t.alignCenter,
+        t.justifyCenter,
+        t.itemsCenter,
+        t.roundedFull,
+        styles.buttonDefauts,
+      ]}>
+      {props.children}
+    </TouchableOpacity>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  buttonDefauts: {
+    minHeight: 48,
+    minWidth: 96,
+  },
+});
 
-export default Game;
+export default ButtonDefault;
