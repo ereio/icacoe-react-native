@@ -27,6 +27,9 @@ Because it's my first time, I may have accidentally used some bad practices or u
 
 With additional time, I would have liked to add the following:
 
+- have an examples of internal component state (useState)
+  - convert the "board" store to local state
+  - it's not really necessary to have the board in a global redux store, though it's here as an example
 - eslintrc.js with rules formatted to desired code styling (editor agnostic code styleguide)
   - airbnb's probably
 - Pick which user goes first on home screen
