@@ -8,13 +8,6 @@ This is actually my first time ever using hooks. Much of what I know about React
 familar with using original class components, binding function scope in constructors, etc. I tried to extend what I know about sustainable archtitecture, but applied with hooks.
 Because it's my first time, I may have accidentally used some bad practices or undesirable patterns. Please let me know if so, as I'd like for this aims to be learning experience! :)
 
-With additional time, I would have added the following:
-- eslintrc.js with rules formatted to desired code styling (editor agnostic code styleguide)
-  - airbnb's probably
-- extract react-navigation out to an isolated component alongside the view as index.js (similar to the store index.js)
-- setup dotenv for development or staging environment config (if remote apis or demo data was available)
-- add a nice icon
-
 ## Steps
 
 0. create stubbed views based on estimated screens needed
@@ -32,7 +25,15 @@ With additional time, I would have added the following:
 
 ## Improvements (with more time)
 
+With additional time, I would have liked to add the following:
+
 - Pick which user goes first on home screen
 - See how many times each player type has won (or tied) on score board
 - Clean up some rough code
 - Testing domain logic (within the redux store and actions)
+- eslintrc.js with rules formatted to desired code styling (editor agnostic code styleguide)
+  - airbnb's probably
+- extract react-navigation out to an isolated component alongside the view as index.js (similar to the store index.js)
+- setup dotenv for development or staging environment config (if remote apis or demo data was available)
+- add a nice icon
+- actual UI/UX stuff
