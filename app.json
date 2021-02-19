@@ -1,4 +1,8 @@
 {
   "name": "icacoe",
-  "displayName": "icacoe"
+  "displayName": "icacoe",
+  "expo": {
+    "name": "Icacoe",
+    "slug": "icacoe"
+  }
 }

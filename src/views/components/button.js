@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import {Button, TouchableOpacity, StyleSheet, View} from 'react-native';
-import {t} from 'react-native-tailwindcss';
+import { Button, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { t } from 'react-native-tailwindcss';
 
 const ButtonDefault = (props) => {
   return (

@@ -5,19 +5,19 @@
  * @format
  * @flow strict-local
  */
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import React from 'react';
-import {View, StyleSheet, StatusBar} from 'react-native';
+import { View, StyleSheet, StatusBar } from 'react-native';
 
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 
 import Home from './views/home';
 import Game from './views/game';
 import Score from './views/score';
-import {Routes} from './global/values';
-import {store} from './store';
+import { Routes } from './global/values';
+import { store } from './store';
 
 const Stack = createStackNavigator();
 

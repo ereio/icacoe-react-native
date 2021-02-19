@@ -1,4 +1,4 @@
-import {ADD_PLAYER_MOVE, RESET_BOARD} from './actions';
+import { ADD_PLAYER_MOVE, RESET_BOARD } from './actions';
 import initialState from './state';
 
 export default function boardReducer(state = initialState(), action) {
