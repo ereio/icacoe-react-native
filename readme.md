@@ -1,12 +1,12 @@
 # icacoe
 
-a tictactoe app created as an example
+a tictactoe app created as an example (1 hour timebox)
 
 ## Overview
 
-This is actually my first time ever using hooks. Much of what I know about React Native comes from development starting in 2017 and earlier version of React. I'm far more
-familar with using original class components, binding function scope in constructors, etc. I tried to extend what I know about sustainable archtitecture, but applied with hooks.
-Because it's my first time, I may have accidentally used some bad practices or undesirable patterns. Please let me know if so, as I'd like for this aims to be learning experience! :)
+Much of my professional experience with React Native comes from development starting in 2017 and earlier versions of React.
+I've used class based components, binding function scope in constructors, etc. for longer, but have used hooks now in my personal development.
+Additionally, I've tried to implement what I know about sustainable, long term archtitecture, but also applied with hooks!
 
 ## Steps
 

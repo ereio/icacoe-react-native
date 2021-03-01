@@ -10,7 +10,7 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import { t } from 'react-native-tailwindcss';
 
-const Board = ({ onPressSpot, positions }, ...props) => {
+export const Board = ({ onPressSpot, positions, disabled }, ...props) => {
   const rows = [0, 1, 2];
   const cols = [0, 1, 2];
 
@@ -23,7 +23,8 @@ const Board = ({ onPressSpot, positions }, ...props) => {
           <TouchableOpacity
             {...props}
             key={position}
-            onPress={() => (char.length ? null : onPressSpot(position))}
+            disabled={disabled || char.length}
+            onPress={() => onPressSpot(position)}
             style={[
               t.flex,
               t.textCenter,
@@ -48,6 +49,4 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
   },
-});
-
-export default Board;
+}); 

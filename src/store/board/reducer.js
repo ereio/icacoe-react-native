@@ -1,7 +1,7 @@
 import { ADD_PLAYER_MOVE, RESET_BOARD } from './actions';
 import initialState from './state';
 
-export default function boardReducer(state = initialState(), action) {
+export default boardReducer = (state = initialState(), action) => {
   switch (action.type) {
     case ADD_PLAYER_MOVE: {
       const player = action.player;

@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 
-import { Button } from './components';
+import { Button } from '../components';
 
 import { useNavigation } from '@react-navigation/native';
-import { Routes } from '../global/values';
+import { Routes } from '../../global/values';
 import { colors, t } from 'react-native-tailwindcss';
 
 /**
  * Home Screen
  */
-const Home = (props) => {
+export const Home = (props) => {
   const navigation = useNavigation();
   return (
     <SafeAreaView
@@ -38,6 +38,4 @@ const Home = (props) => {
 const styles = StyleSheet.create({
   defaults: {},
   title: {},
-});
-
-export default Home;
+}); 

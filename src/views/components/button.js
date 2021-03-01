@@ -10,7 +10,7 @@ import React from 'react';
 import { Button, TouchableOpacity, StyleSheet, View } from 'react-native';
 import { t } from 'react-native-tailwindcss';
 
-const ButtonDefault = (props) => {
+export const ButtonDefault = (props) => {
   return (
     <TouchableOpacity
       {...props}
@@ -34,6 +34,4 @@ const styles = StyleSheet.create({
     minHeight: 48,
     minWidth: 96,
   },
-});
-
-export default ButtonDefault;
+}); 

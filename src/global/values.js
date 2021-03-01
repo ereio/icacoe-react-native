@@ -1,7 +1,7 @@
 const Routes = {
   Home: 'Home',
   Game: 'Game',
-  Score: 'Score',
+  Scores: 'Scores',
 };
 
-export {Routes};
+export { Routes };
